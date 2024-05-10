@@ -123,8 +123,9 @@ prettify_calendar <- function(calendar) {
       alpha = 0.8
     )
   
+  path <- "dist/calendar_pretty.html"
   # save to file
-  gtsave(calendar_pretty, "dist/calendar_pretty.html")
+  gtsave(calendar_pretty, path)
   
-  calendar
+  path
 }
