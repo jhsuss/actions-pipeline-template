@@ -3,7 +3,7 @@ name: run-pipeline
 on: 
   push:
   schedule:
-    - cron:  '30 13 * * *'
+    - cron:  '40 13 * * *'
     #- cron:  '0 4 * * *'
 
 jobs:
