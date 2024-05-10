@@ -3,7 +3,7 @@ name: run-pipeline
 on: 
   push:
   schedule:
-    - cron:  '36 14 * * *'
+    - cron:  '46 14 * * *'
     #- cron:  '0 4 * * *'
 
 jobs:
@@ -40,6 +40,8 @@ jobs:
       - name: Run pipeline
         env: # Set the secret as an input
           FMP: ${{ secrets.FMP_KEY }}
+          FIRST_NAME: Joel
+          LAST_NAME: Suss
         run: |
           Rscript run.R
         shell: bash
