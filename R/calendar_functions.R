@@ -17,6 +17,7 @@ fetch_calendar <- function() {
     "&apikey=",
     FMP_KEY # key saved as repo secret 
   )
+  headers <- add_headers("Content-Type" = "application/json")
   
   # Send request
   tryCatch({
@@ -62,6 +63,7 @@ fetch_calendar <- function() {
     ) 
   
   # define our important events per central bank
+  # TODO improve this
   keep <- list(
     ecb = c(
       "retail sales yoy", 
@@ -100,6 +102,7 @@ fetch_calendar <- function() {
     ) 
   
   calendar <- calendar %>% 
+    # TODO add actual for value
     select(date:event,previous:estimate, importance) %>% 
     mutate(
       country = case_when(
