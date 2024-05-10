@@ -3,7 +3,7 @@ name: run-pipeline
 on: 
   push:
   schedule:
-    - cron:  '18 14 * * *'
+    - cron:  '21 14 * * *'
     #- cron:  '0 4 * * *'
 
 jobs:
@@ -38,6 +38,8 @@ jobs:
       - uses: r-lib/actions/setup-renv@v2
   
       - name: Run pipeline
+        with: # Set the secret as an input
+          fmp: ${{ secrets.FMP_KEY }}
         run: |
           Rscript run.R
         shell: bash
