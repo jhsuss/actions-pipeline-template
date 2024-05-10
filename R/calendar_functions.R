@@ -5,9 +5,11 @@
 
 fetch_calendar <- function() {
   
-  FMP_KEY <- Sys.getenv("FMP")
   
   # get calendar for today and coming week
+  
+  FMP_KEY <- Sys.getenv("FMP")
+  
   url <- paste0(
     "https://financialmodelingprep.com/api/v3/economic_calendar?",
     "from=",Sys.Date(),
@@ -16,7 +18,30 @@ fetch_calendar <- function() {
     FMP_KEY # key saved as repo secret 
   )
   
-  calendar <- fromJSON(url)
+  # Send request
+  tryCatch({
+    response <- GET(
+      url,
+      headers,
+      timeout = 60)},
+    error = function(c) {
+      stop(c)
+    })
+  
+  # Get response text
+  response_text <- content(
+    response, 
+    as = "text", 
+    encoding = "utf-8")
+  
+  # Check the response
+  if (response$status_code != 200) {
+    stop(str_glue(
+      "The server responded with the error message: {response_text}"))
+  }  
+  
+  
+  calendar <- fromJSON(response_text)
   
   # filter to our countries and key events
   calendar <- calendar %>% 
