@@ -23,7 +23,12 @@ tar_option_set(
     "lubridate",
     "purrr",
     "readr",
-    "stringr"), 
+    "stringr",
+    
+    #"tidyverse",
+    "gt",
+    "gtExtras"
+    ), 
   format = "rds" 
 )
 
@@ -44,6 +49,8 @@ lapply(list.files("R", full.names = TRUE, recursive = TRUE), source)
 
 # Replace the target list below with your own
 list(
+  tar_target(calendar, fetch_calendar(), cue = tar_cue(mode = "always")),
+  tar_target(calendar, prettify_calendar(calendar), format = "file"),
   tar_target(products, fetch_products(), cue = tar_cue(mode = "always")),
   tar_target(brand_products_files, split_products(products), format = "file")
 )
