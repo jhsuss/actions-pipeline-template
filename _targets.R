@@ -25,7 +25,7 @@ tar_option_set(
     "readr",
     "stringr",
     
-    "tidyverse",
+    #"tidyverse",
     "gt",
     "gtExtras"
     ), 
