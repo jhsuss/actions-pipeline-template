@@ -89,7 +89,7 @@ fetch_calendar <- function() {
       `Central bank` = Country
     ) 
   
-  write_csv(calendar, file = "dist/calendar_test.csv")
+  write_csv(calendar, file = "dist/calendar_this_week.csv")
   
   calendar %>%
     mutate(
