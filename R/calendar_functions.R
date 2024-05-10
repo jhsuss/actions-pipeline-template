@@ -5,6 +5,8 @@
 
 fetch_calendar <- function() {
   
+  FMP_KEY <- Sys.getenv("FMP")
+  
   # get calendar for today and coming week
   url <- paste0(
     "https://financialmodelingprep.com/api/v3/economic_calendar?",
