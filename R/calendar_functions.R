@@ -59,7 +59,7 @@ fetch_calendar <- function() {
     ) %>% 
     relocate(time, .after = date) %>% 
     arrange(
-      date, country, importance, time
+      date, importance, time
     ) 
   
   # define our important events per central bank
