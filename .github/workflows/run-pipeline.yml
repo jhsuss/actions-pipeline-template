@@ -37,10 +37,6 @@ jobs:
       - uses: r-lib/actions/setup-renv@v2
   
       - name: Run pipeline
-        env: # Set the secret as an input
-          FMP: ${{ secrets.FMP_KEY }}
-          FIRST_NAME: Joel
-          LAST_NAME: Suss
         run: |
           Rscript run.R
         shell: bash
