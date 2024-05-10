@@ -89,9 +89,7 @@ fetch_calendar <- function() {
       `Central bank` = Country
     ) 
   
-  write_csv(calendar, file = "dist/calendar_this_week.csv")
-  
-  calendar %>%
+  calendar <- calendar %>%
     mutate(
       # remove some superfluous text
       Event = str_remove_all(Event, "^(Fed|BoE|BoJ|ECB) |YoY "),
@@ -101,7 +99,15 @@ fetch_calendar <- function() {
         str_detect(Event, "Decision") ~ "Decision"
       ),
       Time = paste0(Time, " (BST)")
-    )
+    ) %>% 
+    # TODO make category more comprehensive before displaying
+    select(-Category)
+  
+  # save to github folder
+  write_csv(calendar, file = "dist/calendar_this_week.csv")
+  
+  calendar
+  
   
 }
 
