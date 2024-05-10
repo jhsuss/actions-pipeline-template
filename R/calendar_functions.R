@@ -11,7 +11,7 @@ fetch_calendar <- function() {
   url <- paste0(
     "https://financialmodelingprep.com/api/v3/economic_calendar?",
     "from=",Sys.Date(),
-    "&to=",Sys.Date()+6, 
+    "&to=",Sys.Date() + 6, 
     "&apikey=",
     FMP_KEY # key saved as repo secret 
   )
