@@ -3,7 +3,7 @@ name: run-pipeline
 on: 
   push:
   schedule:
-    - cron:  '21 14 * * *'
+    - cron:  '29 14 * * *'
     #- cron:  '0 4 * * *'
 
 jobs:
@@ -38,10 +38,10 @@ jobs:
       - uses: r-lib/actions/setup-renv@v2
   
       - name: Run pipeline
-        with: # Set the secret as an input
-          fmp: ${{ secrets.FMP_KEY }}
         run: |
           Rscript run.R
+        with: # Set the secret as an input
+          fmp: ${{ secrets.FMP_KEY }}
         shell: bash
       
       - uses: stefanzweifel/git-auto-commit-action@v5
