@@ -1,49 +1,36 @@
 Date,Time,Central bank,Event,Previous,Estimate,Importance
-2024-05-10,08:00:00 (BST),ECB,Cipollone Speech,NA,NA,Low
-2024-05-10,09:45:00 (BST),ECB,Elderson Speech,NA,NA,Low
-2024-05-10,07:00:00 (BST),BoE,GDP MoM (Mar),0.2,0.1,High
 2024-05-10,07:00:00 (BST),BoE,GDP Growth Rate (Q1),-0.2,0,High
-2024-05-10,07:00:00 (BST),BoE,GDP Growth Rate QoQ (Q1),-0.3,0.4,High
-2024-05-10,07:00:00 (BST),BoE,Goods Trade Balance Non-EU (Mar),-2.78,-2.7,High
-2024-05-10,07:00:00 (BST),BoE,Goods Trade Balance (Mar),-14.13,-14.4,High
-2024-05-10,07:00:00 (BST),BoE,GDP 3-Month Avg (Mar),0.2,0.4,Medium
-2024-05-10,12:15:00 (BST),BoE,Pill Speech,NA,NA,Medium
-2024-05-10,12:45:00 (BST),BoE,Dhingra Speech,NA,NA,Low
+2024-05-10,07:00:00 (BST),BoE,GDP 3-Month Avg (Mar),0.2,0.4,High
+2024-05-10,12:30:00 (BST),ECB,Monetary Policy Meeting Accounts,NA,NA,High
 2024-05-10,15:00:00 (BST),Fed,Michigan Consumer Sentiment (May),77.2,76,High
+2024-05-10,12:15:00 (BST),BoE,Pill Speech,NA,NA,Medium
 2024-05-10,14:00:00 (BST),Fed,Bowman Speech,NA,NA,Medium
 2024-05-10,15:00:00 (BST),Fed,Kashkari Speech,NA,NA,Medium
 2024-05-10,17:45:00 (BST),Fed,Goolsbee Speech,NA,NA,Medium
 2024-05-10,18:30:00 (BST),Fed,Barr Speech,NA,NA,Medium
+2024-05-10,08:00:00 (BST),ECB,Cipollone Speech,NA,NA,Low
+2024-05-10,09:45:00 (BST),ECB,Elderson Speech,NA,NA,Low
+2024-05-10,12:45:00 (BST),BoE,Dhingra Speech,NA,NA,Low
 2024-05-13,14:00:00 (BST),Fed,Mester Speech,NA,NA,Medium
 2024-05-13,14:00:00 (BST),Fed,Jefferson Speech,NA,NA,Medium
-2024-05-13,16:00:00 (BST),Fed,Consumer Inflation Expectations (Apr),3,3.1,Low
-2024-05-14,07:00:00 (BST),BoE,Employment Change (Mar),-156,-210,High
+2024-05-13,16:00:00 (BST),Fed,Consumer Inflation Expectations (Apr),3,NA,Low
+2024-05-14,07:00:00 (BST),BoE,Employment Change (Mar),-156,NA,High
 2024-05-14,07:00:00 (BST),BoE,Unemployment Rate (Mar),4.2,4.3,High
-2024-05-14,08:30:00 (BST),BoE,Pill Speech,NA,NA,Medium
+2024-05-14,10:00:00 (BST),ECB,ZEW Economic Sentiment Index (May),43.9,46.1,High
 2024-05-14,13:30:00 (BST),Fed,PPI MoM (Apr),0.2,0.2,High
 2024-05-14,15:00:00 (BST),Fed,Chair Powell Speech,NA,NA,High
+2024-05-14,08:30:00 (BST),BoE,Pill Speech,NA,NA,Medium
 2024-05-14,14:10:00 (BST),Fed,Cook Speech,NA,NA,Medium
-2024-05-15,10:00:00 (BST),ECB,Employment Change QoQ (Q1),0.3,0.3,High
-2024-05-15,10:00:00 (BST),ECB,Employment Change (Q1),1.2,1.3,High
-2024-05-15,10:00:00 (BST),ECB,GDP Growth Rate (Q1),0.1,0.4,Medium
-2024-05-15,13:30:00 (BST),Fed,Retail Sales Ex Gas/Autos MoM (Apr),1,0.2,High
-2024-05-15,13:30:00 (BST),Fed,Retail Sales Ex Autos MoM (Apr),1.1,0.2,High
-2024-05-15,13:30:00 (BST),Fed,Core Inflation Rate (Apr),3.8,3.7,High
+2024-05-15,10:00:00 (BST),ECB,GDP Growth Rate (Q1),0.1,0.4,High
+2024-05-15,10:00:00 (BST),ECB,GDP Growth Rate QoQ (Q1),-0.1,0.3,High
 2024-05-15,13:30:00 (BST),Fed,Inflation Rate (Apr),3.5,3.4,High
-2024-05-15,13:30:00 (BST),Fed,Retail Sales (Apr),4,3.8,High
-2024-05-15,13:30:00 (BST),Fed,CPI (Apr),312.33,313.9,High
-2024-05-15,13:30:00 (BST),Fed,Core Inflation Rate MoM (Apr),0.4,0.3,High
-2024-05-15,13:30:00 (BST),Fed,CPI s.a (Apr),312.23,313.2,High
-2024-05-15,13:30:00 (BST),Fed,Inflation Rate MoM (Apr),0.4,0.3,High
 2024-05-15,13:30:00 (BST),Fed,Retail Sales MoM (Apr),0.7,0.4,High
-2024-05-15,13:30:00 (BST),Fed,NY Empire State Manufacturing Index (May),-14.3,-10.8,High
+2024-05-15,13:30:00 (BST),Fed,Core Inflation Rate (Apr),3.8,NA,High
 2024-05-15,17:00:00 (BST),Fed,Kashkari Speech,NA,NA,Medium
 2024-05-15,20:20:00 (BST),Fed,Bowman Speech,NA,NA,Medium
-2024-05-16,00:50:00 (BST),BoJ,GDP Growth Rate QoQ (Q1),0.1,-0.4,High
-2024-05-16,13:30:00 (BST),Fed,Jobless Claims 4-week Average (May/11),215,214,High
-2024-05-16,13:30:00 (BST),Fed,Continuing Jobless Claims (May/04),1785,1790,High
+2024-05-15,13:30:00 (BST),Fed,Retail Sales (Apr),4,NA,Low
+2024-05-16,00:50:00 (BST),BoJ,GDP Growth Annualized (Q1),0.4,NA,High
 2024-05-16,13:30:00 (BST),Fed,Building Permits (Apr),1.467,1.48,High
-2024-05-16,13:30:00 (BST),Fed,Initial Jobless Claims (May/11),231,225,High
 2024-05-16,15:00:00 (BST),Fed,Barr Speech,NA,NA,Medium
 2024-05-16,15:30:00 (BST),Fed,Harker Speech,NA,NA,Medium
 2024-05-16,17:00:00 (BST),Fed,Mester Speech,NA,NA,Medium
