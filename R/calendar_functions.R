@@ -152,24 +152,6 @@ fetch_calendar <- function() {
 
 prettify_calendar <- function(calendar_long) {
   
-  # calendar_pretty <- calendar_long %>% 
-  #   group_by(country) %>% 
-  #   select(-c(currency, unit, changePercentage)) %>% 
-  #   arrange(importance,date) %>%
-  #   gt() %>% 
-  #   tab_header(
-  #     title = "Calendar for the upcoming week"
-  #   ) %>% 
-  #   fmt_date(
-  #     columns = date, date_style = "wd_m_day_year"
-  #   ) #%>%
-  #   # gt_highlight_rows(
-  #   #   rows = str_detect(str_to_lower(event), "speech"),
-  #   #   fill = "#F2DFCE",
-  #   #   alpha = 0.8
-  #   # ) %>% 
-  #   #opt_interactive()
-  
   tab <- calendar_long |> 
     select(-c(currency, unit, changePercentage,impact)) %>% 
     arrange(country,importance, date) |> 
@@ -187,7 +169,7 @@ prettify_calendar <- function(calendar_long) {
   calendar_pretty <- tab %>% 
     tab_header(
     title = "Calendar for the upcoming week"
-  ) %>% 
+    ) %>% 
     fmt_date(
       columns = date, date_style = "wd_m_day_year"
     ) %>% 
@@ -195,7 +177,13 @@ prettify_calendar <- function(calendar_long) {
     rows = str_detect(importance, "High"),
     fill = "#F2DFCE",
     alpha = 0.8
-  ) 
+    ) %>% 
+    gt_highlight_rows(
+      rows = str_detect(str_to_lower(event), "speech") & !str_detect(importance, "High"),
+      fill = "#F2DFCE",
+      alpha = 0.4
+    ) 
+  
   
   
   path <- "dist/calendar_pretty.html"
