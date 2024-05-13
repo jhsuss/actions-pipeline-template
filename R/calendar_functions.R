@@ -176,7 +176,7 @@ prettify_calendar <- function(calendar_long) {
     gt(groupname_col = "country", rownames_to_stub = TRUE) |> 
     tab_stub_indent(everything(), 5)
   
-  values <- unique(calendar$country)
+  #values <- unique(calendar_long$country)
   colours <- c("#EFF3FF", "#BDD7E7","#6BAED6", "#2171B5") #RColorBrewer::brewer.pal(length(values), "Blues")
   
   for (i in seq_along(values)) {
