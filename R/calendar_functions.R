@@ -10,10 +10,17 @@ fetch_calendar <- function() {
   
   FMP_KEY <- Sys.getenv("FMP")
   
+  # if today is Sat or Sun
+  if (wday(Sys.Date()) %in% c(1,7)) {
+    days_add <- 8
+  } else {
+    days_add <- 6
+  }
+  
   url <- paste0(
     "https://financialmodelingprep.com/api/v3/economic_calendar?",
     "from=",Sys.Date(),
-    "&to=",Sys.Date() + 6, 
+    "&to=",Sys.Date() + days_add, 
     "&apikey=",
     FMP_KEY # key saved as repo secret 
   )
@@ -61,6 +68,8 @@ fetch_calendar <- function() {
     arrange(
       date, importance, time
     ) 
+  
+  calendar_long <- calendar
   
   # define our important events per central bank
   # TODO improve this
@@ -134,28 +143,60 @@ fetch_calendar <- function() {
   # save to github folder
   write_csv(calendar, file = "dist/calendar_this_week.csv")
   
-  calendar
+  calendar_long
   
   
 }
 
 
 
-prettify_calendar <- function(calendar) {
+prettify_calendar <- function(calendar_long) {
   
-  calendar_pretty <- calendar %>%
-    gt() %>% 
+  # calendar_pretty <- calendar_long %>% 
+  #   group_by(country) %>% 
+  #   select(-c(currency, unit, changePercentage)) %>% 
+  #   arrange(importance,date) %>%
+  #   gt() %>% 
+  #   tab_header(
+  #     title = "Calendar for the upcoming week"
+  #   ) %>% 
+  #   fmt_date(
+  #     columns = date, date_style = "wd_m_day_year"
+  #   ) #%>%
+  #   # gt_highlight_rows(
+  #   #   rows = str_detect(str_to_lower(event), "speech"),
+  #   #   fill = "#F2DFCE",
+  #   #   alpha = 0.8
+  #   # ) %>% 
+  #   #opt_interactive()
+  
+  tab <- calendar_long |> 
+    select(-c(currency, unit, changePercentage,impact)) %>% 
+    arrange(country,importance, date) |> 
+    gt(groupname_col = "country", rownames_to_stub = TRUE) |> 
+    tab_stub_indent(everything(), 5)
+  
+  values <- unique(calendar$country)
+  colours <- c("#EFF3FF", "#BDD7E7","#6BAED6", "#2171B5") #RColorBrewer::brewer.pal(length(values), "Blues")
+  
+  for (i in seq_along(values)) {
+    tab <- tab |>
+      tab_style(cell_fill(colours[i]), cells_row_groups(i))
+  }
+  
+  calendar_pretty <- tab %>% 
     tab_header(
-      title = "Calendar this week"
-    ) %>% 
+    title = "Calendar for the upcoming week"
+  ) %>% 
     fmt_date(
-      columns = Date, date_style = "wd_m_day_year"
-    ) %>%
+      columns = date, date_style = "wd_m_day_year"
+    ) %>% 
     gt_highlight_rows(
-      rows = str_detect(str_to_lower(Event), "speech"),
-      fill = "#F2DFCE",
-      alpha = 0.8
-    )
+    rows = str_detect(importance, "High"),
+    fill = "#F2DFCE",
+    alpha = 0.8
+  ) 
+  
   
   path <- "dist/calendar_pretty.html"
   # save to file
