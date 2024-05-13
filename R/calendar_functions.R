@@ -179,7 +179,7 @@ prettify_calendar <- function(calendar_long) {
   #values <- unique(calendar_long$country)
   colours <- c("#EFF3FF", "#BDD7E7","#6BAED6", "#2171B5") #RColorBrewer::brewer.pal(length(values), "Blues")
   
-  for (i in seq_along(values)) {
+  for (i in seq_along(colours)) {
     tab <- tab |>
       tab_style(cell_fill(colours[i]), cells_row_groups(i))
   }
