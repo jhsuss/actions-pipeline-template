@@ -1,8 +1,4 @@
 Date,Time,Central bank,Event,Previous,Estimate,Importance
-2024-05-13,14:00:00 (BST),Fed,Jefferson Speech,NA,NA,Medium
-2024-05-13,14:00:00 (BST),Fed,Mester Speech,NA,NA,Medium
-2024-05-13,14:00:00 (BST),ECB,Buch Speech,NA,NA,Low
-2024-05-13,16:00:00 (BST),Fed,Consumer Inflation Expectations (Apr),3,NA,Low
 2024-05-14,07:00:00 (BST),BoE,Employment Change (Mar),-156,-215,High
 2024-05-14,07:00:00 (BST),BoE,Unemployment Rate (Mar),4.2,4.3,High
 2024-05-14,10:00:00 (BST),ECB,ZEW Economic Sentiment Index (May),43.9,46.1,High
@@ -34,3 +30,5 @@ Date,Time,Central bank,Event,Previous,Estimate,Importance
 2024-05-18,00:50:00 (BST),BoJ,Balance of Trade (Apr),NA,NA,High
 2024-05-18,22:45:00 (BST),Fed,Kugler Speech,NA,NA,Medium
 2024-05-19,20:30:00 (BST),Fed,Chair Powell Speech,NA,NA,High
+2024-05-20,10:00:00 (BST),BoE,Broadbent Speech,NA,NA,Medium
+2024-05-20,13:45:00 (BST),Fed,Bostic Speech,NA,NA,Medium
