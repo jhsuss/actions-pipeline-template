@@ -1,12 +1,4 @@
 Date,Time,Central bank,Event,Previous,Estimate,Importance
-2024-05-14,07:00:00 (BST),BoE,Employment Change (Mar),-156,-215,High
-2024-05-14,07:00:00 (BST),BoE,Unemployment Rate (Mar),4.2,4.3,High
-2024-05-14,10:00:00 (BST),ECB,ZEW Economic Sentiment Index (May),43.9,46.1,High
-2024-05-14,13:30:00 (BST),Fed,PPI MoM (Apr),0.2,0.3,High
-2024-05-14,15:00:00 (BST),Fed,Chair Powell Speech,NA,NA,High
-2024-05-14,08:30:00 (BST),BoE,Pill Speech,NA,NA,Medium
-2024-05-14,14:10:00 (BST),Fed,Cook Speech,NA,NA,Medium
-2024-05-14,13:45:00 (BST),ECB,Schnabel Speech,NA,NA,Low
 2024-05-15,10:00:00 (BST),ECB,GDP Growth Rate QoQ (Q1),-0.1,0.3,High
 2024-05-15,10:00:00 (BST),ECB,GDP Growth Rate (Q1),0.1,0.4,High
 2024-05-15,13:30:00 (BST),Fed,Core Inflation Rate (Apr),3.8,3.6,High
@@ -32,3 +24,7 @@ Date,Time,Central bank,Event,Previous,Estimate,Importance
 2024-05-19,20:30:00 (BST),Fed,Chair Powell Speech,NA,NA,High
 2024-05-20,10:00:00 (BST),BoE,Broadbent Speech,NA,NA,Medium
 2024-05-20,13:45:00 (BST),Fed,Bostic Speech,NA,NA,Medium
+2024-05-21,14:00:00 (BST),Fed,Barkin Speech,NA,NA,Medium
+2024-05-21,18:00:00 (BST),BoE,Gov Bailey Speech,NA,NA,Medium
+2024-05-21,09:20:00 (BST),BoE,Kroszner Speech,NA,NA,Low
+2024-05-22,2024-05-22 (BST),Fed,Bostic Speech,NA,NA,Medium
