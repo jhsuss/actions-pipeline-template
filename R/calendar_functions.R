@@ -66,7 +66,14 @@ fetch_calendar <- function() {
     relocate(time, .after = date) %>% 
     arrange(
       date, time
-    ) 
+    ) %>% 
+    # filter out known mistakes 
+    filter(
+      !str_detect(
+        str_to_lower(event),
+        "fed kroszner|fed chair yellen"
+      )
+    )
   
   calendar_long <- calendar
   
@@ -107,10 +114,7 @@ fetch_calendar <- function() {
       #  str_to_lower(event),
       #  "^gdp yoy"
       #)
-      !str_detect(
-        str_to_lower(event),
-        "fed kroszner|fed chair yellen"
-      )
+      
     ) 
   
   calendar <- calendar %>% 
