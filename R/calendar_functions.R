@@ -2,12 +2,11 @@
 # library(gt)
 # library(gtExtras)
 # library(jsonlite)
+# library(httr)
 
 fetch_calendar <- function() {
   
-  
   # get calendar for today and coming week
-  
   FMP_KEY <- Sys.getenv("FMP")
   
   # if today is Sat or Sun
@@ -56,7 +55,7 @@ fetch_calendar <- function() {
     filter(
       country %in% c("EU", "US", "UK", "JP"),
       # take out auctions # take out government budget to GDP
-      !str_detect(str_to_lower(event), "auction|natural gas|mortgage rate|^(mba|ism|eia|children|greenery) | (oil|rig) ")
+      !str_detect(str_to_lower(event), "baker hughes total rigs|public sector net borrowing|stock investment by foreigners|(new|existing) home sales|building permits|auction|natural gas|mortgage rate|^(mba|ism|eia|children|greenery) | (oil|rig) ")
     ) %>% 
     mutate(
       importance = factor(impact, levels = c("High", "Medium", "Low", "None")),
@@ -66,7 +65,7 @@ fetch_calendar <- function() {
     ) %>% 
     relocate(time, .after = date) %>% 
     arrange(
-      date, importance, time
+      date, time
     ) 
   
   calendar_long <- calendar
@@ -104,15 +103,19 @@ fetch_calendar <- function() {
           "interest rate decision|speech" 
         ),
       # don't keep: some superfluous items
+      #!str_detect(
+      #  str_to_lower(event),
+      #  "^gdp yoy"
+      #)
       !str_detect(
         str_to_lower(event),
-        "^gdp yoy"
+        "fed kroszner|fed chair yellen"
       )
     ) 
   
   calendar <- calendar %>% 
     # TODO add actual for value
-    select(date:event,previous:estimate, importance) %>% 
+    select(date:event,previous:estimate) %>% 
     mutate(
       country = case_when(
         country == "US" ~ "Fed",
@@ -132,13 +135,17 @@ fetch_calendar <- function() {
       Event = str_remove_all(Event, "^(Fed|BoE|BoJ|ECB) |YoY "),
       Category = case_when(
         str_detect(Event, "Speech") ~ "Comms",
-        str_detect(Event, "GDP|Inflation") ~ "Data",
-        str_detect(Event, "Decision") ~ "Decision"
+        str_detect(Event, "Decision") ~ "Decision",
+        TRUE ~ "Data"
       ),
-      Time = paste0(Time, " (BST)")
+      Date = format(Date,"%B %d %Y"),
+      Time = paste0(str_extract(Time,"\\d{2}:\\d{2}"), " (BST)")
     ) %>% 
-    # TODO make category more comprehensive before displaying
-    select(-Category)
+    mutate_at(
+      vars(Previous, Estimate),
+      ~ ifelse(is.na(.), "", .)
+    ) %>% 
+    arrange()
   
   # save to github folder
   write_csv(calendar, file = "dist/calendar_this_week.csv")
@@ -154,6 +161,7 @@ prettify_calendar <- function(calendar_long) {
   
   tab <- calendar_long |> 
     select(-c(currency, unit, changePercentage,impact)) %>% 
+    mutate(country = factor(country, levels = c("US","EU","UK","JP"))) %>% 
     arrange(country,importance, date) |> 
     gt(groupname_col = "country", rownames_to_stub = TRUE) |> 
     tab_stub_indent(everything(), 5)
