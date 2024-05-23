@@ -1,0 +1,29 @@
+..generic:
+  git2rdata: 0.4.0
+  optimize: yes
+  NA string: NA
+  hash: fa6cafe31e8e9189b17efebdfc7a734c4ddb33e3
+  data_hash: 2d91b5b41c6567f9b5cde3c4f0f0d28c9db6d5b0
+geo:
+  class: character
+Month:
+  class: Date
+  origin: '1970-01-01'
+Central estimate:
+  class: numeric
+bottom:
+  class: numeric
+lower_band:
+  class: numeric
+central_band:
+  class: numeric
+upper_band:
+  class: numeric
+Long run:
+  class: numeric
+commentary_central:
+  class: character
+commentary_higher:
+  class: character
+commentary_lower:
+  class: character
