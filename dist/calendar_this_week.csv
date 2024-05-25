@@ -1,16 +1,24 @@
 Date,Time,Central bank,Event,Previous,Estimate,Category
-May 24 2024,07:00 (BST),BoE,Retail Sales (Apr),0.8,-0.2,Data
-May 24 2024,08:00 (BST),ECB,Schnabel Speech,,,Comms
-May 24 2024,13:30 (BST),Fed,Durable Goods Orders MoM (Apr),2.6,-0.8,Data
-May 24 2024,14:35 (BST),Fed,Waller Speech,,,Comms
-May 24 2024,15:00 (BST),Fed,Michigan Consumer Sentiment (May),77.2,67.5,Data
 May 26 2024,08:30 (BST),ECB,Cipollone Speech,,,Comms
+May 27 2024,01:05 (BST),BoJ,Gov Ueda Speech,,,Comms
+May 27 2024,03:05 (BST),BoJ,BOJ Uchida Speech,,,Comms
+May 27 2024,13:00 (BST),ECB,Lane Speech,,,Comms
+May 28 2024,05:55 (BST),ECB,Schnabel Speech,,,Comms
 May 28 2024,05:55 (BST),Fed,Mester Speech,,,Comms
 May 28 2024,14:55 (BST),Fed,Kashkari Speech,,,Comms
 May 28 2024,15:00 (BST),Fed,CB Consumer Confidence (May),97,95.9,Data
+May 28 2024,18:05 (BST),Fed,Cook Speech,,,Comms
+May 29 2024,02:30 (BST),BoJ,Adachi Speech,,,Comms
 May 29 2024,18:45 (BST),Fed,Williams Speech,,,Comms
 May 30 2024,10:00 (BST),ECB,Consumer Inflation Expectations (May),11.6,,Data
 May 30 2024,13:30 (BST),Fed,GDP Growth Rate QoQ (Q1),3.4,1.5,Data
-May 30 2024,13:30 (BST),Fed,Goods Trade Balance (Apr),-91.83,-93,Data
+May 30 2024,13:30 (BST),Fed,Goods Trade Balance (Apr),-91.83,-91.8,Data
 May 30 2024,17:05 (BST),Fed,Williams Speech,,,Comms
-May 31 2024,00:50 (BST),BoJ,Retail Sales (Apr),1.2,,Data
+May 30 2024,NA (BST),Fed,Bostic Speech,,,Comms
+May 30 2024,22:00 (BST),Fed,Logan Speech,,,Comms
+May 31 2024,00:50 (BST),BoJ,Retail Sales (Apr),1.2,1.9,Data
+May 31 2024,10:00 (BST),ECB,Core Inflation Rate (May),2.7,2.7,Data
+May 31 2024,13:30 (BST),Fed,Core PCE Price Index (Apr),2.8,,Data
+May 31 2024,13:30 (BST),Fed,Personal Income MoM (Apr),0.5,0.3,Data
+May 31 2024,13:30 (BST),Fed,PCE Price Index (Apr),2.7,,Data
+May 31 2024,23:15 (BST),Fed,Bostic Speech,,,Comms
