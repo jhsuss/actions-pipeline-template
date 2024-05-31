@@ -10,11 +10,12 @@ fetch_calendar <- function() {
   FMP_KEY <- Sys.getenv("FMP")
   
   # if today is Sat or Sun
-  if (wday(Sys.Date()) %in% c(1,7)) {
-    days_add <- 8
-  } else {
-    days_add <- 6
-  }
+  # if (wday(Sys.Date()) %in% c(1,7)) {
+  #   days_add <- 8
+  # } else {
+  #   days_add <- 6
+  # }
+  days_add <- 14
   
   url <- paste0(
     "https://financialmodelingprep.com/api/v3/economic_calendar?",
