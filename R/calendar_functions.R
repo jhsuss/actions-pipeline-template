@@ -92,7 +92,8 @@ fetch_calendar <- function() {
     ),
     fed = c(
       "economic optimism index",
-      "michigan consumer sentiment"
+      "michigan consumer sentiment",
+      "jolts job"
     ),
     boe = c(
       "monetary policy report",
@@ -109,12 +110,7 @@ fetch_calendar <- function() {
           str_to_lower(event), 
           "interest rate decision|speech" 
         ),
-      # don't keep: some superfluous items
-      #!str_detect(
-      #  str_to_lower(event),
-      #  "^gdp yoy"
-      #)
-      
+
     ) 
   
   calendar <- calendar %>% 
