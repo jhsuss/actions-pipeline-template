@@ -1,38 +1,36 @@
 Date,Time,Central bank,Event,Previous,Estimate,Category
-May 31 2024,10:00 (BST),ECB,Core Inflation Rate (May),2.7,2.8,Data
-May 31 2024,13:30 (BST),Fed,Personal Income MoM (Apr),0.5,0.3,Data
-May 31 2024,13:30 (BST),Fed,Core PCE Price Index (Apr),2.8,2.8,Data
-May 31 2024,13:30 (BST),Fed,PCE Price Index (Apr),2.7,2.7,Data
-May 31 2024,23:15 (BST),Fed,Bostic Speech,,,Comms
 June 04 2024,10:00 (BST),ECB,Consumer Inflation Expectations (Apr),3,,Data
+June 04 2024,15:00 (BST),Fed,RCM/TIPP Economic Optimism Index (Jun),41.8,45.2,Data
+June 04 2024,15:00 (BST),Fed,JOLTs Job Openings (Apr),8.488,8.35,Data
 June 04 2024,15:00 (BST),Fed,JOLTs Job Quits (Apr),3.329,,Data
-June 04 2024,15:00 (BST),Fed,RCM/TIPP Economic Optimism Index (Jun),41.8,,Data
-June 04 2024,15:00 (BST),Fed,JOLTs Job Openings (Apr),8.488,,Data
-June 05 2024,00:30 (BST),BoJ,Average Cash Earnings (Apr),0.6,,Data
+June 05 2024,00:30 (BST),BoJ,Average Cash Earnings (Apr),0.6,1.7,Data
 June 05 2024,01:30 (BST),BoJ,Jibun Bank Composite PMI (May),52.3,,Data
 June 06 2024,02:30 (BST),BoJ,Nakamura Speech,,,Comms
 June 06 2024,10:00 (BST),ECB,Retail Sales (Apr),0.7,,Data
 June 06 2024,13:15 (BST),ECB,Interest Rate Decision,4.5,4.25,Decision
 June 06 2024,13:45 (BST),ECB,Press Conference,,,Data
 June 07 2024,00:30 (BST),BoJ,Household Spending (Apr),-1.2,0.6,Data
+June 07 2024,08:00 (BST),ECB,Nagel Speech,,,Comms
 June 07 2024,10:00 (BST),ECB,GDP Growth Rate (Q1),0.1,0.4,Data
-June 07 2024,10:00 (BST),ECB,GDP Growth Rate 3rd (Q1),0.1,0.4,Data
 June 07 2024,10:00 (BST),ECB,GDP Growth Rate QoQ 3rd (Q1),-0.1,0.3,Data
+June 07 2024,10:00 (BST),ECB,GDP Growth Rate 3rd (Q1),0.1,0.4,Data
 June 07 2024,13:30 (BST),Fed,Unemployment Rate (May),3.9,3.9,Data
 June 07 2024,13:30 (BST),Fed,Non Farm Payrolls (May),175,180,Data
+June 07 2024,15:15 (BST),ECB,President Lagarde Speech,,,Comms
 June 07 2024,17:00 (BST),Fed,Cook Speech,,,Comms
 June 10 2024,00:50 (BST),BoJ,GDP Growth Annualized (Q1),0.4,,Data
-June 11 2024,07:00 (BST),BoE,Unemployment Rate (Apr),4.3,,Data
 June 11 2024,07:00 (BST),BoE,Employment Change (Apr),-178,,Data
-June 12 2024,07:00 (BST),BoE,GDP (Apr),0.7,,Data
+June 11 2024,07:00 (BST),BoE,Unemployment Rate (Apr),4.3,,Data
 June 12 2024,07:00 (BST),BoE,GDP 3-Month Avg (Apr),0.6,,Data
+June 12 2024,07:00 (BST),BoE,GDP (Apr),0.7,,Data
 June 12 2024,13:30 (BST),Fed,Inflation Rate (May),,,Data
 June 12 2024,13:30 (BST),Fed,Core Inflation Rate (May),3.6,,Data
 June 12 2024,16:00 (BST),Fed,Consumer Inflation Expectations (May),3.3,,Data
-June 12 2024,19:00 (BST),Fed,FOMC Economic Projections,,,Data
 June 12 2024,19:00 (BST),Fed,Interest Rate Decision,,,Decision
+June 12 2024,19:00 (BST),Fed,FOMC Economic Projections,,,Data
 June 12 2024,19:30 (BST),Fed,Press Conference,,,Data
 June 13 2024,13:30 (BST),Fed,PPI MoM (May),0.5,,Data
-June 14 2024,05:00 (BST),BoJ,Interest Rate Decision,,,Decision
-June 14 2024,15:00 (BST),Fed,Michigan Consumer Sentiment (Jun),,75,Data
+June 14 2024,05:00 (BST),BoJ,Interest Rate Decision,0.1,,Decision
+June 14 2024,15:00 (BST),Fed,Michigan Consumer Sentiment (Jun),69.1,,Data
+June 14 2024,19:00 (BST),Fed,Goolsbee Speech,,,Comms
 June 15 2024,00:50 (BST),BoJ,Balance of Trade (May),,,Data
