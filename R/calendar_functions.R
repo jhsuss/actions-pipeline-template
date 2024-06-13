@@ -5,7 +5,7 @@
 # library(httr)
 
 fetch_calendar <- function() {
-  
+    
   # get calendar for today and coming week
   FMP_KEY <- Sys.getenv("FMP")
   
