@@ -19,7 +19,7 @@ tar_option_set(
     "dplyr",
     "httr",
     "jsonlite",
-    "janitor",
+    "janitor", 
     "lubridate",
     "purrr",
     "readr",
