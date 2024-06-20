@@ -1,6 +1,4 @@
 Date,Time,Central bank,Event,Previous,Estimate,Category
-June 19 2024,07:00 (BST),BoE,Inflation Rate (May),2.3,2,Data
-June 19 2024,07:00 (BST),BoE,Core Inflation Rate (May),3.9,3.5,Data
 June 20 2024,12:00 (BST),BoE,Interest Rate Decision,5.25,5.25,Decision
 June 20 2024,21:00 (BST),Fed,Barkin Speech,,,Comms
 June 21 2024,00:30 (BST),BoJ,Inflation Rate (May),2.5,,Data
@@ -9,27 +7,28 @@ June 21 2024,07:00 (BST),BoE,Retail Sales (May),-2.7,-0.9,Data
 June 23 2024,14:20 (BST),ECB,Schnabel Speech,,,Comms
 June 24 2024,00:50 (BST),BoJ,Summary of Opinions,,,Data
 June 24 2024,10:00 (BST),ECB,Consumer Inflation Expectations (Apr),3,,Data
-June 25 2024,15:00 (BST),Fed,CB Consumer Confidence (Jun),102,,Data
+June 25 2024,15:00 (BST),Fed,CB Consumer Confidence (Jun),102,100,Data
 June 25 2024,17:00 (BST),Fed,Cook Speech,,,Comms
 June 25 2024,19:15 (BST),Fed,Bowman Speech,,,Comms
 June 27 2024,10:00 (BST),ECB,Consumer Inflation Expectations (Jun),12.5,,Data
-June 27 2024,13:30 (BST),Fed,GDP Growth Rate QoQ (Q1),3.4,,Data
+June 27 2024,13:30 (BST),Fed,Durable Goods Orders MoM (May),0.7,0.3,Data
+June 27 2024,13:30 (BST),Fed,GDP Growth Rate QoQ (Q1),3.4,1.3,Data
 June 27 2024,13:30 (BST),Fed,Goods Trade Balance (May),,,Data
-June 27 2024,13:30 (BST),Fed,Durable Goods Orders MoM (May),0.7,,Data
 June 28 2024,00:50 (BST),BoJ,Retail Sales (May),2.4,,Data
-June 28 2024,07:00 (BST),BoE,GDP Growth Rate (Q1),-0.2,,Data
+June 28 2024,07:00 (BST),BoE,GDP Growth Rate (Q1),-0.2,0.2,Data
 June 28 2024,11:40 (BST),Fed,Barkin Speech,,,Comms
-June 28 2024,13:30 (BST),Fed,Personal Income MoM (May),,,Data
 June 28 2024,13:30 (BST),Fed,Core PCE Price Index (May),2.8,,Data
-June 28 2024,13:30 (BST),Fed,PCE Price Index (May),,,Data
-June 28 2024,15:00 (BST),Fed,Michigan Consumer Sentiment (Jun),,,Data
+June 28 2024,13:30 (BST),Fed,PCE Price Index (May),2.7,,Data
+June 28 2024,13:30 (BST),Fed,Personal Income MoM (May),,,Data
+June 28 2024,15:00 (BST),Fed,Michigan Consumer Sentiment (Jun),69.1,,Data
 July 02 2024,10:00 (BST),ECB,Core Inflation Rate (Jun),,,Data
-July 02 2024,15:00 (BST),Fed,JOLTs Job Openings (May),8.059,,Data
 July 02 2024,15:00 (BST),Fed,JOLTs Job Quits (May),3.507,,Data
+July 02 2024,15:00 (BST),Fed,JOLTs Job Openings (May),8.059,,Data
 July 02 2024,15:10 (BST),Fed,RCM/TIPP Economic Optimism Index (Jul),40.5,,Data
-July 03 2024,01:30 (BST),BoJ,Jibun Bank Composite PMI (Jun),,52,Data
-July 03 2024,09:00 (BST),ECB,HCOB Services PMI (Jun),,52.7,Data
-July 03 2024,09:30 (BST),BoE,S&P Global Services PMI (Jun),,,Data
-July 03 2024,13:15 (BST),Fed,ADP Employment Change (Jun),,100,Data
-July 03 2024,14:45 (BST),Fed,S&P Global Services PMI (Jun),,52,Data
+July 03 2024,01:30 (BST),BoJ,Jibun Bank Composite PMI (Jun),52.6,,Data
 July 03 2024,19:00 (BST),Fed,FOMC Minutes,,,Data
+July 04 2024,10:00 (BST),BoE,UK General Election,,,Data
+July 04 2024,13:30 (BST),Fed,Initial Jobless Claims (Jun/29),,,Data
+July 04 2024,13:30 (BST),Fed,Continuing Jobless Claims (Jun/22),,,Data
+July 04 2024,13:30 (BST),Fed,Jobless Claims 4-week Average (Jun/29),,,Data
+July 05 2024,00:30 (BST),BoJ,Household Spending (May),,,Data
